@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="medical_pathology_form_view" model="ir.ui.view">
+            <field name="name">medical.pathology.form.view</field>
+            <field name="model">medical.pathology</field>
+            <field name="arch" type="xml">
+                <form string="Pathology Info">
+                    <sheet >
+                            <div name="button_box_prescription" class="oe_button_box" position="inside">
+                                <button class="oe_stat_button" type="object" name="get_patient"  icon="fa-user">
+                                <field string="patient" id="patient" name="pathology_count" widget="statinfo"/>
+                                </button>
+                           </div>
+                       <notebook>
+                        <page string="Main">
+                            <group colspan="4" col="4">
+                                <field name="name" />
+                                <field name="code" />
+                                <field name="category_id" />
+                                <newline />
+                            </group>
+                        </page>
+                        <page string="Genetics">
+                            <group colspan="4" col="4">
+                                <field name="chromosome" />
+                                <field name="protein" />
+                                <field name="gene" />
+                            </group>
+                        </page>
+                        <page string="Extra Info">
+                            <field name="info" />
+                        </page>
+                    </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="medical_pathology_kanban_view" model="ir.ui.view">
+                    <field name="name">medical_pathology.Kanban</field>
+                    <field name="model">medical.pathology</field>
+                    <field name="arch" type="xml">
+                        <kanban>
+                            <field name="name"/>
+                            <field name="category_id"/>
+                            <templates>
+                                <t t-name="kanban-box">
+                                      <div class="oe_kanban_global_click">
+                                        <div class="oe_kanban_details">
+                                            <strong class="o_kanban_record_title">
+                                                <field name="name"/>
+                                            </strong>
+                                            <ul>
+                                                <li><strong>category: <field name="category_id"></field></strong></li>
+                                            </ul>
+                                            <div name="tags"/>
+                                        </div>
+                                    </div>
+                                </t>
+                            </templates>
+                        </kanban>
+                    </field>
+        </record>
+
+        <record id="medical_pathology_tree_view" model="ir.ui.view">
+            <field name="name">medical.pathology.tree.view</field>
+            <field name="model">medical.pathology</field>
+            <field name="arch" type="xml">
+                <tree string="Pathology">
+                    <field name="name" />
+                    <field name="code" />
+                    <field name="category_id" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_medical_pathology" model="ir.actions.act_window">
+            <field name="name">Diseases</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">medical.pathology</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">kanban,tree,form</field>
+        </record>
+
+        <menuitem id="menu_diseases" name="Diseases"
+            parent="main_menu_configartion" sequence='1' />
+        <menuitem id="menu_sub_diseases" action="action_medical_pathology"
+            sequence="3" parent="menu_diseases" />
+
+        <record id="action_medical_pathology" model="ir.actions.act_window">
+            <field name="name">Pathology</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">medical.pathology</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">kanban,tree,form</field>
+        </record>
+
+        <menuitem id="pathology_child" action="action_medical_pathology"
+            name="Pathology" parent="menu_patients" sequence="3" />
+</odoo>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="medical_patient_disease_form_view" model="ir.ui.view">
+            <field name="name">medical.patient.disease.form.view</field>
+            <field name="model">medical.patient.disease</field>
+            <field name="arch" type="xml">
+                <form string="medical patient disease">
+                    <sheet>
+                        <div name="button_box_prescription" class="oe_button_box" position="inside">
+                            <button class="oe_stat_button" type="object" name="get_patient_disease"  icon="fa-user">
+                        <!--   <field string="patient disease" id="disease" name="patient_disease_count" widget="statinfo"/>-->
+                            </button>
+                        </div>
+                        <group colspan="4" col="4" string="Main">
+                            <field name="pathology_id" />
+                            <field name="disease_severity" />
+                            <field name="status" />
+                            <field name="is_infectious" />
+                            <field name="is_active" />
+                            <field name="short_comment" />
+                            <field name="diagnosis_date" />
+                            <field name="healed_date" />
+                            <field name="age" />
+                            <field name="doctor_id" />
+                        </group>
+                        <group colspan="4" col="4" string="Allergies">
+                            <field name="is_allergic" />
+                            <field name="allergy_type" />
+                        </group>
+                        <group colspan="4" col="4" string="Pregnancy">
+                            <field name="pregnancy_warning" />
+                            <field name="week_of_pregnancy" />
+                        </group>
+                        <group colspan="4" col="4" string="Therapy">
+                            <field name="is_on_treatment" />
+                            <field name="treatment_description" />
+                            <field name="date_start_treatment" />
+                            <field name="date_stop_treatment" />
+                        </group>
+                        <group string="Extra Info">
+                            <field name="extra_info" nolabel="1" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="medical_patient_disease_tree_view" model="ir.ui.view">
+            <field name="name">medical.patient.disease.tree.view</field>
+            <field name="model">medical.patient.disease</field>
+            <field name="arch" type="xml">
+                <tree string="Medical Patient Disease" multi_edit="1">
+                    <field name="patient_id" optional="show" />
+                    <field name="pathology_id" optional="show"/>
+                    <field name="status" optional="show"/>
+                    <field name="is_active" optional="show"/>
+                    <field name="is_infectious" optional="show"/>
+                    <field name="disease_severity" optional="show"/>
+                    <field name="pregnancy_warning" optional="show"/>
+                    <field name="diagnosis_date" optional="show"/>
+                    <field name="date_stop_treatment" optional="show"/>
+                    <field name="short_comment" optional="show"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="medical_patients_disease_kanban_view" model="ir.ui.view">
+                    <field name="name">medical_patients_disease.Kanban</field>
+                    <field name="model">medical.patient.disease</field>
+                    <field name="arch" type="xml">
+                        <kanban>
+                            <field name="pathology_id"/>
+                            <field name="status"/>
+                            <templates>
+                                <t t-name="kanban-box">
+                                      <div class="oe_kanban_global_click">
+                                        <div class="oe_kanban_details">
+                                            <strong class="o_kanban_record_title">
+                                                <field name="pathology_id"/>
+                                            </strong>
+                                            <ul>
+                                                <li><strong>status: <field name="status"></field></strong></li>
+                                            </ul>
+                                            <div name="tags"/>
+                                        </div>
+                                    </div>
+                                </t>
+                            </templates>
+                </kanban>
+        </field>
+        </record>
+
+        <record id="view_medical_patients_disease_graph" model="ir.ui.view" >
+               <field name="name">medical.patient.disease.graph</field>
+               <field name="model">medical.patient.disease</field>
+               <field name="type">graph</field>
+               <field name="arch" type="xml">
+                     <graph string="medical patient disease"  orientation="horizontal"  type="pie" >
+                        <field name="pathology_id"/>
+                         <field name="patient_id" group="True" type="measure" />
+                    </graph>
+                </field>
+        </record>
+
+        <record id="view_medical_patients_disease_pivot" model="ir.ui.view">
+            <field name="name">medical.patient.disease.pivot</field>
+            <field name="model">medical.patient.disease</field>
+            <field name="arch" type="xml">
+                <pivot string="Medical Patient History Analysis">
+                   <field name="pathology_id" type="row"/>
+                   <field name="patient_id" type="measure"/>
+                </pivot>
+            </field>
+        </record>
+        <record id="action_medical_patient_disease" model="ir.actions.act_window">
+            <field name="name">Diseases</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">medical.patient.disease</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">graph,tree,kanban,pivot</field>
+        </record>
+
+        <menuitem id="medical_patient_disease_child" action="action_medical_patient_disease"
+            name="Medical Patient Disease" parent="menu_patients" sequence="4" />
+</odoo>

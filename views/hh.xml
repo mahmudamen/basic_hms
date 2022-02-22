@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="ModelName_form_view" model="ir.ui.view">
+            <field name="name">medical.tab.form</field>
+            <field name="model">medical.tab</field>
+            <field name="arch" type="xml">
+                <form string="ModelTitle">
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name"/>
+                            <h1>
+                                <field name="name" placeholder="Title"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                            </group>
+                            <group>
+                                <field name="name"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="ModelName_tree_view" model="ir.ui.view">
+            <field name="name">medical.tab.tree</field>
+            <field name="model">medical.tab</field>
+            <field name="arch" type="xml">
+                <tree string="ModelTitle">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+
+
+        <record id="action_hh" model="ir.actions.act_window">
+            <field name="name">hh</field>
+            <field name="res_model">medical.tab</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+                <menuitem id="hh_child" action="action_hh"
+            name="hh" parent="menu_patients" sequence="4" />
+
+
+
+    </data>
+</odoo>

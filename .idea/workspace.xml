@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8d72e733-6439-4034-afbb-e8d5874f00b3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/model/hh.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/hh.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../estate_assests/models/Governmental_Entity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/medical_pathology.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/medical_pathology.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/medical_patient.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/medical_patient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/medical_patient_disease.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/medical_patient_disease.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_view.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/security/ir.model.access.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/description/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/description/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/src/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/main_menu_file.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/main_menu_file.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/medical_appointment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/medical_appointment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/medical_pathology.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/medical_pathology.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/medical_patient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/medical_patient.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/medical_patient_disease.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/medical_patient_disease.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="OdooViewBasic" />
+        <option value="OdooModel" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1wWmU7wzqADZDEk8SMyDcpWzz03" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultOdooModelFileTemplate" value="OdooModel" />
+    <property name="DefaultOdooViewFileTemplate" value="OdooViewBasic" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../odoo-14/odoo/odoo/addons" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="Python.odoo-bin">
+    <configuration name="odoo-14" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../odoo-14/odoo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../../odoo-14/odoo/odoo-bin" />
+      <option name="PARAMETERS" value="-c D:\odoo\odoo\odoo-14\odoo.conf" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="odoo-bin (١)" type="PythonConfigurationType" factoryName="Python" folderName="New Folder" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\meno\AppData\Local\Programs\Python\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../odoo-bin" />
+      <option name="PARAMETERS" value="-c D:\odoo\odoo\odoo.conf" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="odoo-bin" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="basic_hms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\meno\AppData\Local\Programs\Python\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../odoo-bin" />
+      <option name="PARAMETERS" value="-c D:\odoo\odoo\odoo.conf" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.odoo-bin (١)" />
+      <item itemvalue="Python.odoo-bin" />
+      <item itemvalue="Python.odoo-14" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d72e733-6439-4034-afbb-e8d5874f00b3" name="Changes" comment="" />
+      <created>1628582732675</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628582732675</updated>
+    </task>
+    <task id="LOCAL؜٠٠٠٠١" summary="func">
+      <created>1629810571401</created>
+      <option name="number" value="LOCAL؜٠٠٠٠١" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٠١" />
+      <updated>1629810571401</updated>
+    </task>
+    <task id="LOCAL؜٠٠٠٠٢" summary="arabic trans">
+      <created>1629899022152</created>
+      <option name="number" value="LOCAL؜٠٠٠٠٢" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٠٢" />
+      <updated>1629899022152</updated>
+    </task>
+    <task id="LOCAL؜٠٠٠٠٣" summary="smart button">
+      <created>1630237122664</created>
+      <option name="number" value="LOCAL؜٠٠٠٠٣" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٠٣" />
+      <updated>1630237122664</updated>
+    </task>
+    <task id="LOCAL؜٠٠٠٠٤" summary="fix smart button bug">
+      <created>1630306966698</created>
+      <option name="number" value="LOCAL؜٠٠٠٠٤" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٠٤" />
+      <updated>1630306966698</updated>
+    </task>
+    <task id="LOCAL؜٠٠٠٠٥" summary="graph view add to medical patient">
+      <created>1630328155238</created>
+      <option name="number" value="LOCAL؜٠٠٠٠٥" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٠٥" />
+      <updated>1630328155238</updated>
+    </task>
+    <task id="LOCAL؜٠٠٠٠٦" summary="add pivot view &amp;&amp; edit tree view in medical patient">
+      <created>1630415890627</created>
+      <option name="number" value="LOCAL؜٠٠٠٠٦" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٠٦" />
+      <updated>1630415890627</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.po" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="func" />
+    <MESSAGE value="arabic trans" />
+    <MESSAGE value="smart button" />
+    <MESSAGE value="fix smart button bug" />
+    <MESSAGE value="graph view add to medical patient" />
+    <MESSAGE value="add pivot view &amp;&amp; edit tree view in medical patient" />
+    <option name="LAST_COMMIT_MESSAGE" value="add pivot view &amp;&amp; edit tree view in medical patient" />
+  </component>
+</project>
