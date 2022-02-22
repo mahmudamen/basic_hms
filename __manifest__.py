@@ -4,7 +4,7 @@
 {
 
     "name" : "Clinic Management System ",
-    "version" : "13.0.0.2",
+    "version" : "14.0.0.2",
     "currency": 'EGP',
     "summary": "Apps Clinic Management system Healthcare Management Clinic Management apps manage clinic manage Patient Clinic manage Healthcare system Patient Management Clinic Management Healthcare Management Clinic Management Clinic Lab Test Request",
     "category": "Industries",
